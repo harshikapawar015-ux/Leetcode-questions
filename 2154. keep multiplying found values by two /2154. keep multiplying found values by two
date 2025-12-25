@@ -1,0 +1,16 @@
+class Solution {
+    public int findFinalValue(int[] nums, int original) {
+        Map<Integer,Integer> fMap = new HashMap <>();
+        for (int num : nums){
+            fMap.put(num, 1);
+
+        }
+        while (fMap. containsKey(original)){
+            original =original *2;
+
+        }
+        return original;
+
+        
+    }
+}
