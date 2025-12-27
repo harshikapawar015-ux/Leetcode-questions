@@ -1,0 +1,11 @@
+class Solution {
+    public int minimumOperations(int[] nums) {
+        Set<Integer> h = new HashSet<>();
+        for ( int num:  nums){
+            if (num != 0){
+                h.add (num);
+            }
+        }
+        return h.size();
+    }
+}
