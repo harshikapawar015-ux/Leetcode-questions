@@ -1,0 +1,16 @@
+class Solution {
+    public int countAsterisks(String s) {
+        boolean insidePipe = false;
+        int count= 0;
+        for (char c : s.toCharArray()){
+            if (c == '|'){
+                insidePipe =  !insidePipe;
+            } else if (c == '*' && !insidePipe){
+                count++;
+            
+            }
+        }
+        return count;
+        
+    }
+}
